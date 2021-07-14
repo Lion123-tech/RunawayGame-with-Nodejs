@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background-color: orange;
+                display: flex;
+                flex-direction:column;
+                justify-content: flex-start;
+            }
+           
+            #mycanvas{
+                background-image: url("img/bg4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size: 100% 100%;
+            }
+           
+            
+            
+            .back-home{
+                
+                width:55%;
+                height:40px;
+                background-color: white;
+                font-size:25px;
+                font-weight: bolder;
+                color: orangered;
+                
+                display: flex;
+                flex-direction:row;
+            }
+            #div1,#div2{
+                border-bottom: orangered solid;
+                
+                width:50%;
+                height:100%;
+                border-right: solid orangered;
+            }
+            .back-home a{
+                text-decoration: none;
+                color: orangered;
+            }
+            #div2:hover{
+                background-color: rgba(255, 166, 0, 0.774);
+                color: white;
+                border:solid orangered;
+                cursor: pointer;
+            }
+           .back-home a:hover{
+                background-color: rgba(255, 166, 0, 0.774);
+                color: white;
+                border:solid orangered;
+                cursor: pointer;
+            }
+            .back-home div a{
+                text-decoration: none;
+                color: orangered;
+            }
+            .back-home div a:hover{
+                text-decoration: none;
+                color: white;
+            }
+            .desktop{
+                    display:none;
+                }
+             
+        </style>
+        <link rel="stylesheet" href="/CSS/game.css">
+    </head>
+<body>
+   
+   <center>
+    <div class="desktop">
+      Sorry!This game can only be played in desktop!!<br>
+      But dont Worry!Soon these will be played on mobile also!😃
+    </div>
+</center>
+   
+       
+  <div class="c1">
+<canvas id="myCanvas" width="1100" height="500" style="border:1px solid #d3d3d3;">
+  
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+</div>
+
+
+      <div class="back-home">
+        <a href="/" id="div1"><div >BACK TO HOME</div></a>
+        <div id="div2">HIGH-SCORE:{{scoredisplay}}</div>
+       </div>
+   
+<script src="/GAME-COMPONENT/class-ball.js"></script>
+<script src="/GAME-COMPONENT/collide-ball.js"></script>
+<script src="/GAME-COMPONENT/collision-object.js"></script>
+<script src="/GAME-COMPONENT/class-agent.js"></script>
+<script src="/GAME-COMPONENT/class-blocks.js"></script>
+<script src="/GAME-COMPONENT/game.js"></script>
+
+</body>
+</html>

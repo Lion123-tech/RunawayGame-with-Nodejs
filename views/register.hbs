@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="stylesheet" href="./../CSS/reg.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Game:Register</title>
+    <style>
+        .err-part{
+            margin-left:30%;
+              font-size: larger;
+             font-weight: bold;
+             color: orangered;
+             width:45%;
+             height:100px;
+             display:{{display}};
+        }
+        @media screen and (max-width:900px){
+            .err-part{
+                width:80%;
+                margin-left:5%;
+            }
+    </style>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/mario.png" alt="logo"/>
+            <span>ZIGZAGAMEO</span>
+        </div>
+        <ul class="nav-list">
+            <li class="flex-items"><a href="/">Home</a></li>
+            <li class="flex-items"><a href="/">About</a></li>
+            <li class="flex-items"><a href="/">Rules</a></li>
+            <li class="flex-items"><a href="/">play</a></li>
+        </ul>
+        <div class="bars-icon" onclick="togglebar()">
+            <i class="fa fa-bars bars-icon2"></i>
+        </div>
+    </nav>
+    <ul class="nav-list2">
+        <li class="flex-items2"><a href="/">Home</a></li>
+        <li class="flex-items2"><a href="/">About</a></li>
+        <li class="flex-items2"><a href="/">Rules</a></li>
+        <li class="flex-items2"><a href="/">play</a></li>
+    </ul>
+    
+        <div class="err-part">
+            {{errmsg}}
+        </div>
+    
+    <div class="login-part">
+    <div class="login-name">
+       SIGN-UP
+    </div>
+    <form class="entry-part" method="POST" action="/register">
+        <label for="name">NAME:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Name"><br><br>
+        <label for="username">USERNAME:</label><br>
+        <input type="text" id="user-name" name="username" placeholder="Enter User Name"><br><br>
+        <label for="password" class="p1" >PASSWORD:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+        <label for="password" class="p1" >CONFIRM PASSWORD:</label><br>
+        <input type="password" id="cpassword" name="cpassword" placeholder="Enter Password again"><br>
+        <br>
+        <center><input type="submit" value="SIGN-UP" class="submit-part"></center>
+        <center class="newuser">ALREADY USER?<a href="/login">LOGIN</a></center>
+    </form>
+    
+</div>
+
+    <script src="front.js"></script>
+</body>
+</html>
+    

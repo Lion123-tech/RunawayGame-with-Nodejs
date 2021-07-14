@@ -1,0 +1,55 @@
+.rules-part{
+    width:92%;
+    height:250px;
+    margin:7px 0 0 8%;
+    
+    color:white;
+}
+.h1-part{
+    font-size:35px;
+    font-weight: bold;
+    color: white;
+}
+.about-part p{
+    font-size:28px;
+}
+.rules-1{
+    margin:30px ;
+    margin-left:0px;
+}
+.body{
+    background-color: orange;
+}
+.list-rules{
+    display: inline-flex;
+    font-size: 28px;
+}
+.list-rules2{
+    display: none;
+}
+.list-rules:not(:first-child){
+    margin-top:7px;
+}
+.arrow-1{
+    
+    transform: scale(2,1);
+    margin-left:22px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .rules-part{
+        margin:50px 0 0 6%;
+    }
+    .about-part p{
+        font-size:18px;
+    }
+    .list-rules{
+        display:none;
+    }
+    .list-rules2{
+        display:flex;
+        flex-direction:row;
+    }
+    
+}

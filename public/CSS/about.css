@@ -1,0 +1,10 @@
+.about-part{
+    width:70%;
+    height:200px;
+    margin-left:8%;
+    
+    margin-top:5px;
+    color:white;
+    text-transform: uppercase;
+    /*text-shadow:5px 5px 6px orange;*/
+}

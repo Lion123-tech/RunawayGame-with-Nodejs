@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="stylesheet" href="./../CSS/login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Game:Login</title>
+    <style>
+        .err-part{
+            margin-left:20%;
+              font-size: larger;
+             font-weight: bold;
+             color: orangered;
+             width:65%;
+             height:100px;
+             display:{{display}};
+        }
+       
+    </style>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/mario.png" alt="logo"/>
+            <span>ZIGZAGAMEO</span>
+        </div>
+        <ul class="nav-list">
+            <li class="flex-items"><a href="/">Home</a></li>
+            <li class="flex-items"><a href="/">About</a></li>
+            <li class="flex-items"><a href="/">Rules</a></li>
+            <li class="flex-items"><a href="/">play</a></li>
+        </ul>
+        <div class="bars-icon" onclick="togglebar()">
+            <i class="fa fa-bars bars-icon2"></i>
+        </div>
+    </nav>
+    <ul class="nav-list2">
+        <li class="flex-items2"><a href="/">Home</a></li>
+        <li class="flex-items2"><a href="/">About</a></li>
+        <li class="flex-items2"><a href="/">Rules</a></li>
+        <li class="flex-items2"><a href="/">play</a></li>
+    </ul>
+    
+    <div class="err-part">
+        {{errmsg}}
+    </div>
+   
+    <div class="login-part">
+    <div class="login-name">
+       &nbsp;LOGIN 
+    </div>
+    <form class="entry-part" method="POST" action="/login">
+        <label for="username">USERNAME:</label><br>
+        <input type="text" id="user-name" name="username" placeholder="Enter User Name"><br><br>
+        <label for="password" class="p1" >PASSWORD:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password"><br><br><br>
+        <center><input type="submit" value="LOGIN" class="submit-part"></center>
+        <center class="newuser">NEW USER?<a href="/register">SIGN-UP</a></center>
+    </form>
+    
+</div>
+
+    <script src="front.js"></script>
+</body>
+</html>

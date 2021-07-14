@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="stylesheet" href="./../CSS/logout.css">
+    <link rel="stylesheet" href="./../CSS/about.css">
+    <link rel="stylesheet" href="./../CSS/rules.css">
+    <link rel="stylesheet" href="./../CSS/play.css">
+    <link rel="stylesheet" href="./../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Game</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-performance.js"></script>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/mario.png" alt="logo"/>
+            <span>ZIGZAGAMEO</span>
+        </div>
+        <ul class="nav-list">
+            <li class="flex-items"><a href="#home">Home</a></li>
+            <li class="flex-items"><a href="#about-part">About</a></li>
+            <li class="flex-items"><a href="#rules-part">Rules</a></li>
+            <li class="flex-items"><a href="#play-part">play</a></li>
+        </ul>
+        <div class="bars-icon" onclick="togglebar()">
+            <i class="fa fa-bars bars-icon2"></i>
+        </div>
+    </nav>
+    <ul class="nav-list2">
+        <li class="flex-items2"><a href="#home">Home</a></li>
+        <li class="flex-items2"><a href="#about-part">About</a></li>
+        <li class="flex-items2"><a href="#rules-part">Rules</a></li>
+        <li class="flex-items2"><a href="#play-part">play</a></li>
+    </ul>
+    
+    <section class="home-part">
+        <img src="img/mario.png"/>
+        <div class="intro">
+            <div class="intro1">
+                <center>
+                <center><h2>Hey {{name}} !</h2></center>
+                <br>
+                <p>welcome! My name is ziga</p>
+                </center>
+            </div>
+            <div class="reg-button">
+                
+                <a href="/logout"><button class="login">LOGOUT</button></a>
+               
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-part" id="about-part">
+        <span class="h1-part">ABOUT</span><br>
+           <br><br>
+            <p>I NEED YOUR HELP. PLEASE HELP ME TO CROSS BLOCKS BY AVOIDING COLLISION WITH BALLS WHICH APPEAR 
+                ALTERNATE TIME.
+            </p>
+       
+    </section>
+    <section class="rules-part" id="rules-part">
+    <span class="h1-part" >RULES</span>
+    <ol type="1" class="rules-1">
+        <li class="list-rules">1.TO MOVE LEFT ZIGA,PRESS<i class="fa fa-arrow-left arrow-1"></i>&nbsp;&nbsp;on keyboard
+        </li><br>
+        <li class="list-rules">2.TO MOVE RIGHT ZIGA,PRESS<i class="fa fa-arrow-right arrow-1"></i>&nbsp;&nbsp;on keyboard
+        </li><br>
+        <li class="list-rules">3.TO JUMP ZIGA LEFT,PRESS<i class="fa fa-arrow-up arrow-1"></i>&nbsp;&nbsp;on keyboard
+        </li>
+        <li class="list-rules2">1.TO MOVE LEFT ZIGA,PRESS<i class="fa fa-arrow-left arrow-2"></i>
+        </li><br>
+        <li class="list-rules2">2.TO MOVE RIGHT ZIGA,PRESS<i class="fa fa-arrow-right arrow-2"></i>
+        </li><br>
+        <li class="list-rules2">3.TO JUMP ZIGA,PRESS<i class="fa fa-arrow-up arrow-2"></i>
+        </li>
+    </ol>
+    </section>
+    <section class="play-part" id="play-part">
+       <span class="h1-part">THEMES</span><br>
+       <div class="themes">
+           <div class="play-box1"><img src="img/bg4.jpg">
+        <center><h1>DESSERT</h1><br>
+           <a href="/gameagent1"><button class="play-button">PLAY GAME</button></a>
+        </center></div>
+           <div class="play-box2"><img src="img/bg1.jpg">
+            <center><h1>NIGHT</h1><br>
+                <a href="/gameagent2"><button class="play-button1">PLAY GAME</button></a>
+             </center></div>
+           <div class="play-box3"><img src="img/bg3.jpg">
+            <center><h1>CITY</h1><br>
+                <a href="/gameagent3"><button class="play-button1">PLAY GAME</button></a>
+             </center></div>
+       </div>
+    </section>
+    <section class="footer-part">
+    <img src="img/mario.png">
+    <div class="text-part">
+        <center>
+    <span>ZIGZAGAMEO</span><br><br>
+    <p>THANKS FOR VISITING!</p>
+       </center>
+    </div>
+    </section>
+    <script src="/front.js"></script>
+</body>
+</html>

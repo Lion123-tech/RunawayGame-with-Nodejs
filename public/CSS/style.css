@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+*{
+    font-family: cursive;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar{
+   
+    width:100%;
+    height:65px;
+    background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display:inline-flex;
+    padding-right:10px;
+    border-bottom: white solid;
+}
+.logo{
+    margin-left:10%;
+    width:35%;
+    height:65px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo img{
+    width:20%;
+    height:65px;
+    flex-shrink:2;
+    border-style: solid orange;
+    border-radius:100%;
+    background-color: white;
+}
+.logo span{
+    /*margin-left:10%;*/
+    font-family: serif;
+    padding-left:8%;
+    width:60%;
+    font-size: 35px;
+    font-weight: bolder;
+    flex-shrink: 1;
+    color: white;
+}
+.nav-list{
+    margin-left:10%;
+    width:40%;
+    height:65px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+.flex-items{
+   
+    font-size: 20px;
+}
+.flex-items a{
+    color: white;
+}
+.nav-list2{
+    width:100%;
+    height:65px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+     border-bottom: orangered solid;
+}
+.flex-items2{
+    
+    text-transform: uppercase;
+    font-size:18.5px;
+    font-weight: bold;
+    width:20%;
+    
+}
+.flex-items2:not(:last-child){
+    border-right: solid orangered;
+}
+.flex-items2 a{
+    color: orange;
+}
+
+.bars-icon{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .navbar{
+        width:100%;
+        height:65px;
+    }
+    .logo{
+        margin-left:3%;
+    }
+    .logo img{
+        width:30%;
+    }
+    .logo span{
+        width:50%;
+    }
+    .nav-list{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+        width:40%;
+        height:65px;
+        
+        margin-left:25%;
+        padding:25px 0 0 30%;
+    }
+    .bars-icon2{
+        transform: scale(2.5,2);
+        color: white;
+    }
+  }
